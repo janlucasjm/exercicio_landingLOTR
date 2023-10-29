@@ -1,0 +1,32 @@
+@use '_variaveis';
+
+.text__sign {
+    padding: 5.6vw;
+    margin: 10em 0;
+
+    @media (max-width: 768px) {
+        padding: 1em;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 3em;
+        font-family: variaveis.$fonteSecundaria;
+        color: variaveis.$corTituloENav;
+        border-bottom: 1px solid variaveis.$corTituloENav;
+
+        @media (max-width: 768px) {
+            font-size: 2em;
+        }
+    }
+
+    p {
+        color: variaveis.$corDoTextoPrincipal;
+        font-size: 2.5em;
+        margin-top: 10px;
+
+        @media (max-width: 768px) {
+            font-size: 1.5em;
+        }
+    }
+}

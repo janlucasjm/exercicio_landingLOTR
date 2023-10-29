@@ -1,0 +1,48 @@
+@use '_variaveis';
+@use '_navbars';
+@use '_hero';
+@use '_about';
+@use '_shows';
+@use '_sign';
+@use '_footer';
+
+@font-face {
+    font-family: 'Elfico';
+    src: url('../../assets/fonts/Middleearth-ao6m.ttf');
+}
+
+@font-face {
+    font-family: 'Ringbear';
+    src: url('../../assets/fonts/RingbearerMedium-51mgZ.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: variaveis.$fontePrincipal;
+}
+
+body {
+    background-color: lighten(variaveis.$corDeFundo, 5%);
+}
+
+.text-title {
+    font-size: 2em;
+    color: variaveis.$corDoTextoPrincipal;
+}
+
+.button {
+    background-color: variaveis.$corBotao;
+    padding: .7em 1em;
+    border: none;
+    border-radius: 5px;
+    color: variaveis.$corDoTextoPrincipal;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        background-color: lighten(variaveis.$corBotao, 5%);
+        transition: .2s ease;
+    }
+}

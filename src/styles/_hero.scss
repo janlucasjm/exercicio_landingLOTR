@@ -1,0 +1,36 @@
+@use '_variaveis';
+
+.hero {
+    padding: 0 5.6vw 5.6vw 5.6vw;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
+    &__content {
+        width: 100%;
+        color: variaveis.$corDoTextoPrincipal;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+
+        }
+
+        h2 {
+            text-align: center;
+            margin: -60px;
+            font-size: 5em;
+
+            @media (max-width: 768px) {
+                font-size: 2em;
+                margin: 0;
+            }
+
+            @media (min-width: 769px) and (max-width: 1023px) {
+                font-size: 3em;
+                margin: -40px;
+            }
+        }
+    }
+}
